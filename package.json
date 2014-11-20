@@ -1,0 +1,24 @@
+{
+  "name": "peco-stream",
+  "description": "node writable stream to peco",
+  "version": "0.0.1",
+  "author": "nbqx",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nbqx/peco-stream.git"
+  },
+  "homepage": "https://github.com/nbqx/peco-stream",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "event-stream": "^3.1.5"
+  },
+  "devDependencies": {
+    "isstream": "^0.1.0",
+    "tap-colorize": "^1.2.0",
+    "tape": "^3.0.0"
+  }
+}

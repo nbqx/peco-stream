@@ -10,10 +10,10 @@ test.createStream().pipe(colorize()).pipe(process.stdout);
 test('test1',function(t){
   t.plan(2);
   var p = peco();
-  t.ok(isStream(p));
+  t.ok(isStream(p),'this is stream');
   fs.createReadStream(__dirname+'/sample.txt')
     .pipe(p)
     .on('data',function(data){
-      t.ok('aaa',data.toString())
+      t.equal("aaa\n",data.toString())
     });
 });
